@@ -1,0 +1,62 @@
+// Graph
+digraph {
+	graph [bgcolor="#ffffff" fontcolor=white fontsize=12 label="Graph"]
+	node [color=white fillcolor="#2F80B7" fontcolor=white fontname=Helvetica fontsize=6 radius=2 shape=circle style=filled]
+	edge [arrowhead=open color="#33333" fontcolor="#33333" fontname=Courier fontsize=12 style=dashed]
+	origin [label="origin
+
+Delay= 0.3
+ Arrival Time = 0.3
+ Required Time = 0.102428
+ Slack = -0.197572"]
+	a [label="a
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.406526
+ Slack = 0.106526"]
+	AND2X11A [label="AND2X11A
+
+Delay= 0.123474
+ Arrival Time = 0.523474
+ Required Time = 0.506526
+ Slack = -0.016948"]
+	b [label="b
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.402428
+ Slack = 0.102428"]
+	AND2X11B [label="AND2X11B
+
+Delay= 0.137572
+ Arrival Time = 0.527572
+ Required Time = 0.492428
+ Slack = -0.035144"]
+	AND2X11Y [label="AND2X11Y
+
+Delay= 0
+ Arrival Time = 0.527572
+ Required Time = 0.63
+ Slack = 0.102428"]
+	out_y [label="out_y
+
+Delay= 0
+ Arrival Time = 0.647572
+ Required Time = 0.75
+ Slack = 0.102428"]
+	endpoint [label="endpoint
+
+
+ Arrival Time = 0.647572
+ Required Time = 0.75
+ Slack = 0.102428"]
+		origin -> a [label=0]
+		origin -> b [label=0]
+		a -> AND2X11A [label=0.1]
+		AND2X11A -> AND2X11Y [label=0]
+		AND2X11B -> AND2X11Y [label=0]
+		b -> AND2X11B [label=0.09]
+		AND2X11Y -> out_y [label=0.12]
+		out_y -> endpoint [label=0]
+}

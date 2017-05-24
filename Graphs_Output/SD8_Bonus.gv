@@ -1,0 +1,132 @@
+// Graph
+digraph {
+	graph [bgcolor="#ffffff" fontcolor=white fontsize=12 label="Graph"]
+	node [color=white fillcolor="#2F80B7" fontcolor=white fontname=Helvetica fontsize=6 radius=2 shape=circle style=filled]
+	edge [arrowhead=open color="#33333" fontcolor="#33333" fontname=Courier fontsize=12 style=dashed]
+	origin [label="origin
+
+Delay= 0.3
+ Arrival Time = 0.3
+ Required Time = -0.187879
+ Slack = -0.487879"]
+	a [label="a
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.178218
+ Slack = -0.121782"]
+	OR2X11A [label="OR2X11A
+
+Delay= 0.246589
+ Arrival Time = 0.636589
+ Required Time = 0.268218
+ Slack = -0.368371"]
+	c [label="c
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.517067
+ Slack = 0.217067"]
+	XOR2X12A [label="XOR2X12A
+
+Delay= 0.122933
+ Arrival Time = 0.522933
+ Required Time = 0.617067
+ Slack = 0.094134"]
+	b [label="b
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.112121
+ Slack = -0.187879"]
+	OR2X11B [label="OR2X11B
+
+Delay= 0.282686
+ Arrival Time = 0.702686
+ Required Time = 0.232121
+ Slack = -0.470565"]
+	OR2X11Y [label="OR2X11Y
+
+Delay= 0
+ Arrival Time = 0.702686
+ Required Time = 0.514807
+ Slack = -0.187879"]
+	XOR2X12B [label="XOR2X12B
+
+Delay= 0.145193
+ Arrival Time = 0.927879
+ Required Time = 0.594807
+ Slack = -0.333072"]
+	XOR2X12Y [label="XOR2X12Y
+
+Delay= 0
+ Arrival Time = 0.927879
+ Required Time = 0.74
+ Slack = -0.187879"]
+	out_out2 [label="out_out2
+
+Delay= 0
+ Arrival Time = 0.937879
+ Required Time = 0.75
+ Slack = -0.187879"]
+	d1 [label="d1
+
+Delay= 0
+ Arrival Time = 0.787686
+ Required Time = 0.73
+ Slack = -0.057686"]
+	clk [label="clk
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.367552
+ Slack = 0.067552"]
+	clk1 [label="clk1
+
+Delay= 0.252448
+ Arrival Time = 0.662448
+ Required Time = 0.477552
+ Slack = -0.184896"]
+	q1 [label="q1
+
+Delay= 0
+ Hold = -0.09375
+ Setup = 0.28125
+ Setup = 0.155157
+ Setup = 0.252448
+ Arrival Time = 0.787686
+ Required Time = 0.73
+ Slack = -0.057686"]
+	out_out1 [label="out_out1
+
+Delay= 0
+ Arrival Time = 0.807686
+ Required Time = 0.75
+ Slack = -0.057686"]
+	endpoint [label="endpoint
+
+
+ Arrival Time = 0.937879
+ Required Time = 0.75
+ Slack = -0.187879"]
+		origin -> a [label=0]
+		origin -> c [label=0]
+		origin -> b [label=0]
+		origin -> clk [label=0]
+		a -> OR2X11A [label=0.09]
+		out_out1 -> endpoint [label=0]
+		clk -> clk1 [label=0.11]
+		c -> XOR2X12A [label=0.1]
+		clk1 -> q1 [label=0]
+		OR2X11Y -> XOR2X12B [label=0.08]
+		OR2X11Y -> d1 [label=0.085]
+		q1 -> out_out1 [label=0.02]
+		b -> OR2X11B [label=0.12]
+		OR2X11B -> OR2X11Y [label=0]
+		OR2X11A -> OR2X11Y [label=0]
+		XOR2X12Y -> out_out2 [label=0.01]
+		XOR2X12A -> XOR2X12Y [label=0]
+		out_out2 -> endpoint [label=0]
+		XOR2X12B -> XOR2X12Y [label=0]
+		d1 -> q1 [label=0]
+}

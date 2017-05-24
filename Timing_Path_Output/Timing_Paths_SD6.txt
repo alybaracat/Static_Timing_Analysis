@@ -1,0 +1,23 @@
+
+Input to Output Paths: 
+ 
+ origin -> u a -> u NAND2X12A -> u NAND2X12Y -> u NOR2X13B -> u NOR2X13Y -> u out_y1 ->  endpoint 
+
+ origin -> u c -> u NOR2X11A -> u NOR2X11Y -> u out_y2 ->  endpoint 
+
+ origin -> u c -> u NOR2X11A -> u NOR2X11Y -> u out_y2 -> u NOR2X13A -> u NOR2X13Y -> u out_y1 ->  endpoint 
+
+ origin -> u b -> u NAND2X12B -> u NAND2X12Y -> u NOR2X13B -> u NOR2X13Y -> u out_y1 ->  endpoint 
+
+ origin -> u d -> u NOR2X11B -> u NOR2X11Y -> u out_y2 ->  endpoint 
+
+ origin -> u d -> u NOR2X11B -> u NOR2X11Y -> u out_y2 -> u NOR2X13A -> u NOR2X13Y -> u out_y1 ->  endpoint 
+
+Reg to Output Paths: 
+NONE 
+
+Input to Reg Paths: 
+NONE 
+
+Reg to Reg Paths: 
+NONE 

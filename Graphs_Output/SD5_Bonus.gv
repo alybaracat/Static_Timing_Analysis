@@ -1,0 +1,128 @@
+// Graph
+digraph {
+	graph [bgcolor="#ffffff" fontcolor=white fontsize=12 label="Graph"]
+	node [color=white fillcolor="#2F80B7" fontcolor=white fontname=Helvetica fontsize=6 radius=2 shape=circle style=filled]
+	edge [arrowhead=open color="#33333" fontcolor="#33333" fontname=Courier fontsize=12 style=dashed]
+	origin [label="origin
+
+Delay= 0.3
+ Arrival Time = 0.3
+ Required Time = -0.279071
+ Slack = -0.579071"]
+	data [label="data
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.293377
+ Slack = -0.006623"]
+	d2 [label="d2
+
+Delay= 0
+ Arrival Time = 0.39
+ Required Time = 0.383377
+ Slack = -0.006623"]
+	AND2X11B [label="AND2X11B
+
+Delay= 0.137572
+ Arrival Time = 0.557572
+ Required Time = 0.602428
+ Slack = 0.044856"]
+	clk [label="clk
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.020929
+ Slack = -0.279071"]
+	clk1 [label="clk1
+
+Delay= 0.252448
+ Arrival Time = 0.652448
+ Required Time = 0.284078
+ Slack = -0.36837"]
+	clk2 [label="clk2
+
+Delay= 0.252448
+ Arrival Time = 0.662448
+ Required Time = 0.130929
+ Slack = -0.531519"]
+	q2 [label="q2
+
+Delay= 0
+ Hold = -0.09375
+ Setup = 0.28125
+ Setup = 0.155157
+ Setup = 0.252448
+ Arrival Time = 0.662448
+ Required Time = 0.383377
+ Slack = -0.279071"]
+	INVX12A [label="INVX12A
+
+Delay= 0.058149
+ Arrival Time = 0.730597
+ Required Time = 0.393377
+ Slack = -0.33722"]
+	INVX12Y [label="INVX12Y
+
+Delay= 0
+ Arrival Time = 0.730597
+ Required Time = 0.451526
+ Slack = -0.279071"]
+	d1 [label="d1
+
+Delay= 0
+ Arrival Time = 0.815597
+ Required Time = 0.536526
+ Slack = -0.279071"]
+	q1 [label="q1
+
+Delay= 0
+ Hold = -0.09375
+ Setup = 0.28125
+ Setup = 0.155157
+ Setup = 0.252448
+ Arrival Time = 0.815597
+ Required Time = 0.536526
+ Slack = -0.279071"]
+	AND2X11A [label="AND2X11A
+
+Delay= 0.123474
+ Arrival Time = 1.019071
+ Required Time = 0.616526
+ Slack = -0.402545"]
+	AND2X11Y [label="AND2X11Y
+
+Delay= 0
+ Arrival Time = 1.019071
+ Required Time = 0.74
+ Slack = -0.279071"]
+	out_y [label="out_y
+
+Delay= 0
+ Arrival Time = 1.029071
+ Required Time = 0.75
+ Slack = -0.279071"]
+	endpoint [label="endpoint
+
+
+ Arrival Time = 1.029071
+ Required Time = 0.75
+ Slack = -0.279071"]
+		origin -> data [label=0]
+		origin -> clk [label=0]
+		q1 -> AND2X11A [label=0.08]
+		AND2X11A -> AND2X11Y [label=0]
+		clk -> clk1 [label=0.1]
+		clk -> clk2 [label=0.11]
+		INVX12A -> INVX12Y [label=0]
+		AND2X11Y -> out_y [label=0.01]
+		AND2X11B -> AND2X11Y [label=0]
+		d2 -> q2 [label=0]
+		INVX12Y -> d1 [label=0.085]
+		q2 -> INVX12A [label=0.01]
+		clk1 -> q1 [label=0]
+		clk2 -> q2 [label=0]
+		data -> d2 [label=0.09]
+		data -> AND2X11B [label=0.12]
+		out_y -> endpoint [label=0]
+		d1 -> q1 [label=0]
+}

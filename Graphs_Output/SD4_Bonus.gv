@@ -1,0 +1,88 @@
+// Graph
+digraph {
+	graph [bgcolor="#ffffff" fontcolor=white fontsize=12 label="Graph"]
+	node [color=white fillcolor="#2F80B7" fontcolor=white fontname=Helvetica fontsize=6 radius=2 shape=circle style=filled]
+	edge [arrowhead=open color="#33333" fontcolor="#33333" fontname=Courier fontsize=12 style=dashed]
+	origin [label="origin
+
+Delay= 0.3
+ Arrival Time = 0.3
+ Required Time = -0.244724
+ Slack = -0.544724"]
+	data [label="data
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.317724
+ Slack = 0.017724"]
+	OR2X11B [label="OR2X11B
+
+Delay= 0.151161
+ Arrival Time = 0.571161
+ Required Time = 0.488839
+ Slack = -0.082322"]
+	d1 [label="d1
+
+Delay= 0
+ Arrival Time = 0.39
+ Required Time = 0.407724
+ Slack = 0.017724"]
+	clk [label="clk
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.055276
+ Slack = -0.244724"]
+	clk1 [label="clk1
+
+Delay= 0.252448
+ Arrival Time = 0.652448
+ Required Time = 0.155276
+ Slack = -0.497172"]
+	q1 [label="q1
+
+Delay= 0
+ Hold = -0.09375
+ Setup = 0.28125
+ Setup = 0.155157
+ Setup = 0.252448
+ Arrival Time = 0.652448
+ Required Time = 0.407724
+ Slack = -0.244724"]
+	OR2X11A [label="OR2X11A
+
+Delay= 0.122276
+ Arrival Time = 0.884724
+ Required Time = 0.517724
+ Slack = -0.367"]
+	OR2X11Y [label="OR2X11Y
+
+Delay= 0
+ Arrival Time = 0.884724
+ Required Time = 0.64
+ Slack = -0.244724"]
+	out_y [label="out_y
+
+Delay= 0
+ Arrival Time = 0.994724
+ Required Time = 0.75
+ Slack = -0.244724"]
+	endpoint [label="endpoint
+
+
+ Arrival Time = 0.994724
+ Required Time = 0.75
+ Slack = -0.244724"]
+		origin -> data [label=0]
+		origin -> clk [label=0]
+		q1 -> OR2X11A [label=0.11]
+		clk -> clk1 [label=0.1]
+		OR2X11Y -> out_y [label=0.11]
+		OR2X11B -> OR2X11Y [label=0]
+		OR2X11A -> OR2X11Y [label=0]
+		clk1 -> q1 [label=0]
+		data -> OR2X11B [label=0.12]
+		data -> d1 [label=0.09]
+		out_y -> endpoint [label=0]
+		d1 -> q1 [label=0]
+}

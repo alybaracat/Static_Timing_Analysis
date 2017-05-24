@@ -1,0 +1,93 @@
+// Graph
+digraph {
+	graph [bgcolor="#ffffff" fontcolor=white fontsize=12 label="Graph"]
+	node [color=white fillcolor="#222f49" fontcolor=white fontname=Helvetica fontsize=6 radius=2 shape=circle style=filled]
+	edge [arrowhead=open color="#333333" fontcolor=white fontname=Courier fontsize=12]
+	origin [label="origin
+
+Max Delay= 0
+ Min Delay= 0"]
+	a [label="a
+
+Max Delay= 0
+ Min Delay= 0"]
+	NAND2X12A [label="NAND2X12A
+
+Max Delay= 0
+ Min Delay= 0"]
+	c [label="c
+
+Max Delay= 0
+ Min Delay= 0"]
+	NOR2X11A [label="NOR2X11A
+
+Max Delay= 0
+ Min Delay= 0"]
+	b [label="b
+
+Max Delay= 0
+ Min Delay= 0"]
+	NAND2X12B [label="NAND2X12B
+
+Max Delay= 0
+ Min Delay= 0"]
+	NAND2X12Y [label="NAND2X12Y
+
+Max Delay= 0.173084
+ Min Delay= 0"]
+	NOR2X13B [label="NOR2X13B
+
+Max Delay= 0
+ Min Delay= 0"]
+	d [label="d
+
+Max Delay= 0
+ Min Delay= 0"]
+	NOR2X11B [label="NOR2X11B
+
+Max Delay= 0
+ Min Delay= 0"]
+	NOR2X11Y [label="NOR2X11Y
+
+Max Delay= 0.122979
+ Min Delay= 0"]
+	out_y2 [label="out_y2
+
+Max Delay= 0
+ Min Delay= 0"]
+	NOR2X13A [label="NOR2X13A
+
+Max Delay= 0
+ Min Delay= 0"]
+	NOR2X13Y [label="NOR2X13Y
+
+Max Delay= 0.094223
+ Min Delay= 0"]
+	out_y1 [label="out_y1
+
+Max Delay= 0
+ Min Delay= 0"]
+	endpoint [label="endpoint
+
+"]
+		origin -> a
+		origin -> c
+		origin -> b
+		origin -> d
+		a -> NAND2X12A
+		c -> NOR2X11A
+		NAND2X12B -> NAND2X12Y
+		d -> NOR2X11B
+		NAND2X12A -> NAND2X12Y
+		NOR2X13B -> NOR2X13Y
+		NOR2X13Y -> out_y1
+		NOR2X11B -> NOR2X11Y
+		NOR2X11A -> NOR2X11Y
+		b -> NAND2X12B
+		NOR2X11Y -> out_y2
+		NOR2X13A -> NOR2X13Y
+		out_y2 -> endpoint
+		out_y2 -> NOR2X13A
+		NAND2X12Y -> NOR2X13B
+		out_y1 -> endpoint
+}

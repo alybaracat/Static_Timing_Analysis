@@ -1,0 +1,30 @@
+0 >= -0.716302 ==> No Setup Time Violation
+ origin -> u data -> u d2 ->  q2 
+
+0 <= 0.748907 ==> No Hold Time Violation
+ origin -> u data -> u d2 ->  q2 
+
+0 >= -0.716302 ==> No Setup Time Violation
+ origin -> u clk -> u clk2 ->  q2 
+
+0 <= 0.748907 ==> No Hold Time Violation
+ origin -> u clk -> u clk2 ->  q2 
+
+0 >= -0.405705 ==> No Setup Time Violation
+ origin -> u data -> u d2 ->  q2 -> u INVX12A -> u INVX12Y -> u d1 ->  q1 
+
+0 <= 1.048907 ==> No Hold Time Violation
+ origin -> u data -> u d2 ->  q2 -> u INVX12A -> u INVX12Y -> u d1 ->  q1 
+
+0 >= -0.716302 ==> No Setup Time Violation
+ origin -> u clk -> u clk1 ->  q1 
+
+0 <= 1.048907 ==> No Hold Time Violation
+ origin -> u clk -> u clk1 ->  q1 
+
+0 >= -0.405705 ==> No Setup Time Violation
+ origin -> u clk -> u clk2 ->  q2 -> u INVX12A -> u INVX12Y -> u d1 ->  q1 
+
+0 <= 1.048907 ==> No Hold Time Violation
+ origin -> u clk -> u clk2 ->  q2 -> u INVX12A -> u INVX12Y -> u d1 ->  q1 
+
