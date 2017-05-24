@@ -1,0 +1,9 @@
+{
+	"clock_period": 1.6,
+
+	"uncertainty": 0.05,
+
+	"input_delay": 0.3,
+
+	"output_delay": 0.8
+}

@@ -1,0 +1,127 @@
+{
+  "creator": "Yosys 0.7+169 (git sha1 3bbac5c, clang 3.4-1ubuntu3 -fPIC -Os)",
+  "modules": {
+    "simple_design1": {
+      "attributes": {
+        "src": "mydesign.v:3"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "c": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "d": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "y1": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "y2": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$abc$54$auto$blifparse.cc:346:parse_blif$55": {
+          "hide_name": 1,
+          "type": "NOR2X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$54$auto$blifparse.cc:346:parse_blif$56": {
+          "hide_name": 1,
+          "type": "NAND2X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$abc$54$auto$blifparse.cc:346:parse_blif$57": {
+          "hide_name": 1,
+          "type": "NOR2X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$54$n8": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "y1": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "mydesign.v:5"
+          }
+        },
+        "y2": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "mydesign.v:5"
+          }
+        }
+      }
+    }
+  }
+}

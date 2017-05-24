@@ -1,0 +1,17 @@
+// Graph
+digraph {
+	origin [label=origin]
+	a [label=a]
+	b [label=b]
+	AND2X11A [label=AND2X11A]
+	AND2X11B [label=AND2X11B]
+	y [label=y]
+	AND2X11Y [label=AND2X11Y]
+		origin -> a
+		origin -> b
+		a -> AND2X11A
+		b -> AND2X11B
+		AND2X11A -> AND2X11Y
+		AND2X11B -> AND2X11Y
+		AND2X11Y -> y
+}

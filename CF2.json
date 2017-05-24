@@ -1,0 +1,24 @@
+{
+	"input_transition": 0.18,
+
+	"wires":[
+	{	
+		"input": "a",
+		"output": "AND2X11A",
+		"value": 0.01
+	 },
+
+	 {
+	 	"input": "b",
+		"output": "AND2X11B",
+		"value": 0.009
+	 }, 
+
+	 {
+	 	"input": "AND2X11Y",
+		"output": "out_y",
+		"value": 0.012
+	 }
+
+	 ]
+}

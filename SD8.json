@@ -1,0 +1,135 @@
+{
+  "creator": "Yosys 0.7+169 (git sha1 3bbac5c, clang 3.4-1ubuntu3 -fPIC -Os)",
+  "modules": {
+    "simple_design1": {
+      "attributes": {
+        "src": "mydesign.v:3"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "c": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "out1": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "out2": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$abc$54$auto$blifparse.cc:346:parse_blif$55": {
+          "hide_name": 1,
+          "type": "OR2X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$abc$54$auto$blifparse.cc:346:parse_blif$56": {
+          "hide_name": 1,
+          "type": "XOR2X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 8 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:420:simplemap_dff$53": {
+          "hide_name": 1,
+          "type": "DFFPOSX1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 5 ],
+            "D": [ 8 ],
+            "Q": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "mydesign.v:9"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "out1": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "mydesign.v:7"
+          }
+        },
+        "out2": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "mydesign.v:6"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "mydesign.v:5"
+          }
+        }
+      }
+    }
+  }
+}

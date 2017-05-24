@@ -1,0 +1,52 @@
+{
+	"input_transition": 0.06,
+
+	"wires": [{
+			"input": "a",
+			"output": "INVX13A",
+			"value": 0.01
+		},
+
+		{
+			"input": "c",
+			"output": "NOR2X11A",
+			"value": 0.009
+		},
+
+		{
+			"input": "b",
+			"output": "NOR2X11B",
+			"value": 0.012
+		},
+
+		{
+			"input": "clk",
+			"output": "clk1",
+			"value": 0.011
+		},
+
+		{
+			"input": "INVX13Y",
+			"output": "out_out_1",
+			"value": 0.008
+		},
+
+		{
+			"input": "NOR2X11Y",
+			"output": "XNOR2X12B",
+			"value": 0.0085
+		},
+
+		{
+			"input": "XNOR2X12Y",
+			"output": "d1",
+			"value": 0.001
+		},
+
+		{
+			"input": "q1",
+			"output": "out_out_2",
+			"value": 0.002
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"input_transition": 0.06,
+
+	"wires": [{
+			"input": "clk",
+			"output": "clk1",
+			"value": 0.01
+		},
+
+		{
+			"input": "data",
+			"output": "d1",
+			"value": 0.009
+		},
+
+		{
+			"input": "data",
+			"output": "OR2X11B",
+			"value": 0.012
+		},
+
+		{
+			"input": "q1",
+			"output": "OR2X11A",
+			"value": 0.011
+		},
+
+		{
+			"input": "OR2X11Y",
+			"output": "out_y",
+			"value": 0.011
+		}
+
+	]
+}

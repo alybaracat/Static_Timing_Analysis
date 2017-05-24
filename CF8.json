@@ -1,0 +1,54 @@
+{
+	"input_transition": 0.06,
+
+	"wires":[
+	{
+		"input": "c",
+		"output": "XOR2X12A",
+		"value": 0.01
+	 },
+
+	 {
+	 	"input": "a",
+		"output": "OR2X11A",
+		"value": 0.009
+	 }, 
+
+	 {
+	 	"input": "b",
+		"output": "OR2X11B",
+		"value": 0.012
+	 }, 
+
+	 {
+	 	"input": "clk",
+		"output": "clk1",
+		"value": 0.011
+	 }, 
+
+	 {
+	 	"input": "OR2X11Y",
+		"output": "XOR2X12B",
+		"value": 0.008
+	 }, 
+
+	{
+	 	"input": "OR2X11Y",
+		"output": "d1",
+		"value": 0.0085
+	 }, 
+
+	 {
+	 	"input": "XOR2X12Y",
+		"output": "out_out2",
+		"value": 0.001
+	 }, 
+
+	 {
+	 	"input": "q1",
+		"output": "out_out1",
+		"value": 0.002
+	 }
+
+	 ]
+}

@@ -1,0 +1,111 @@
+{
+  "creator": "Yosys 0.7+169 (git sha1 3bbac5c, clang 3.4-1ubuntu3 -fPIC -Os)",
+  "modules": {
+    "simple_design1": {
+      "attributes": {
+        "src": "mydesign.v:3"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "sel": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$abc$48$auto$blifparse.cc:346:parse_blif$49": {
+          "hide_name": 1,
+          "type": "INVX1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$abc$48$auto$blifparse.cc:346:parse_blif$50": {
+          "hide_name": 1,
+          "type": "NAND2X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 5 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$48$auto$blifparse.cc:346:parse_blif$51": {
+          "hide_name": 1,
+          "type": "OAI21X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "C": [ 7 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$48$n5": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "$abc$48$n6": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "sel": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "mydesign.v:5"
+          }
+        }
+      }
+    }
+  }
+}

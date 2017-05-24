@@ -1,0 +1,48 @@
+{
+	"input_transition": 0.18,
+
+	"wires":[
+	{	
+		"input": "a",
+		"output": "INVX11A",
+		"value": 0.01
+	 },
+
+	 {
+	 	"input": "b",
+		"output": "NAND2X13A",
+		"value": 0.009
+	 }, 
+
+	 {
+	 	"input": "sel",
+		"output": "NAND2X13B",
+		"value": 0.012
+	 }, 
+
+	 {
+	 	"input": "sel",
+		"output": "OAI21X12B",
+		"value": 0.011
+	 }, 
+
+	 {
+	 	"input": "INVX11Y",
+		"output": "OAI21X12A",
+		"value": 0.011
+	 }, 
+
+	 {
+	 	"input": "NAND2X13Y",
+		"output": "OAI21X12C",
+		"value": 0.011
+	 }, 
+
+	 {
+	 	"input": "OAI21X12Y",
+		"output": "out_y",
+		"value": 0.011
+	 } 
+
+	 ]
+}

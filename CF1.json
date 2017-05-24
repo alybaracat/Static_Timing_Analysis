@@ -1,0 +1,48 @@
+{
+	"input_transition": 0.06,
+
+	"wires": [
+	{	
+		"input": "a",
+		"output": "NAND2X12A",
+		"value": 0.01
+	 },
+
+	 {
+	 	"input": "b",
+		"output": "NAND2X12B",
+		"value": 0.009
+	 }, 
+
+	 {
+	 	"input": "c",
+		"output": "NAND2X13A",
+		"value": 0.012
+	 }, 
+
+	 {
+	 	"input": "d",
+		"output": "NAND2X13B",
+		"value": 0.011
+	 }, 
+
+	 {
+	 	"input": "NAND2X12Y",
+		"output": "XOR2X11A",
+		"value": 0.008
+	 }, 
+
+	{
+	 	"input": "NAND2X13Y",
+		"output": "XOR2X11B",
+		"value": 0.0085
+	 }, 
+
+	 {
+	 	"input": "XOR2X11Y",
+		"output": "out_y",
+		"value": 0.001
+	 }
+
+	 ]
+}

@@ -1,0 +1,54 @@
+{
+	"input_transition": 0.06,
+
+	"wires": [{
+			"input": "clk",
+			"output": "clk1",
+			"value": 0.01
+		},
+
+		{
+			"input": "data",
+			"output": "d2",
+			"value": 0.009
+		},
+
+		{
+			"input": "data",
+			"output": "AND2X11B",
+			"value": 0.1
+		},
+
+		{
+			"input": "clk",
+			"output": "clk2",
+			"value": 0.011
+		},
+
+		{
+			"input": "q1",
+			"output": "AND2X11A",
+			"value": 0.008
+		},
+
+		{
+			"input": "INVX12Y",
+			"output": "d1",
+			"value": 0.1
+		},
+
+		{
+			"input": "q2",
+			"output": "INVX12A",
+			"value": 0.001
+		},
+
+
+		{
+			"input": "AND2X11Y",
+			"output": "out_y",
+			"value": 0.001
+		}
+
+	]
+}

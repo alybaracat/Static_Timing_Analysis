@@ -1,0 +1,3 @@
+Longest Path: ['origin', u'b', u'NAND2X13A', u'NAND2X13Y', u'OAI21X12C', u'OAI21X12Y', u'out_y']
+
+Delay: 0.294611

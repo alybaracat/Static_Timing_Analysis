@@ -1,0 +1,113 @@
+// Graph
+digraph {
+	graph [bgcolor="#ffffff" fontcolor=white fontsize=12 label="Graph"]
+	node [color=white fillcolor="#2F80B7" fontcolor=white fontname=Helvetica fontsize=6 radius=2 shape=circle style=filled]
+	edge [arrowhead=open color="#33333" fontcolor="#33333" fontname=Courier fontsize=12 style=dashed]
+	origin [label="origin
+
+Delay= 0.3
+ Arrival Time = 0.3
+ Required Time = -0.084574
+ Slack = -0.384574"]
+	a [label="a
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.223839
+ Slack = -0.076161"]
+	INVX11A [label="INVX11A
+
+Delay= 0.108058
+ Arrival Time = 0.508058
+ Required Time = 0.323839
+ Slack = -0.184219"]
+	INVX11Y [label="INVX11Y
+
+Delay= 0
+ Arrival Time = 0.508058
+ Required Time = 0.431897
+ Slack = -0.076161"]
+	OAI21X12A [label="OAI21X12A
+
+Delay= 0.098103
+ Arrival Time = 0.716161
+ Required Time = 0.541897
+ Slack = -0.174264"]
+	b [label="b
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.231226
+ Slack = -0.068774"]
+	NAND2X13A [label="NAND2X13A
+
+Delay= 0.133223
+ Arrival Time = 0.523223
+ Required Time = 0.321226
+ Slack = -0.201997"]
+	sel [label="sel
+
+Delay= 0
+ Arrival Time = 0.3
+ Required Time = 0.215426
+ Slack = -0.084574"]
+	NAND2X13B [label="NAND2X13B
+
+Delay= 0.119023
+ Arrival Time = 0.539023
+ Required Time = 0.335426
+ Slack = -0.203597"]
+	NAND2X13Y [label="NAND2X13Y
+
+Delay= 0
+ Arrival Time = 0.539023
+ Required Time = 0.454449
+ Slack = -0.084574"]
+	OAI21X12C [label="OAI21X12C
+
+Delay= 0.075551
+ Arrival Time = 0.724574
+ Required Time = 0.564449
+ Slack = -0.160125"]
+	OAI21X12B [label="OAI21X12B
+
+Delay= 0.090256
+ Arrival Time = 0.500256
+ Required Time = 0.549744
+ Slack = 0.049488"]
+	OAI21X12Y [label="OAI21X12Y
+
+Delay= 0
+ Arrival Time = 0.724574
+ Required Time = 0.64
+ Slack = -0.084574"]
+	out_y [label="out_y
+
+Delay= 0
+ Arrival Time = 0.834574
+ Required Time = 0.75
+ Slack = -0.084574"]
+	endpoint [label="endpoint
+
+
+ Arrival Time = 0.834574
+ Required Time = 0.75
+ Slack = -0.084574"]
+		origin -> a [label=0]
+		origin -> b [label=0]
+		origin -> sel [label=0]
+		a -> INVX11A [label=0.1]
+		OAI21X12Y -> out_y [label=0.11]
+		NAND2X13Y -> OAI21X12C [label=0.11]
+		INVX11A -> INVX11Y [label=0]
+		OAI21X12A -> OAI21X12Y [label=0]
+		b -> NAND2X13A [label=0.09]
+		INVX11Y -> OAI21X12A [label=0.11]
+		NAND2X13A -> NAND2X13Y [label=0]
+		NAND2X13B -> NAND2X13Y [label=0]
+		sel -> NAND2X13B [label=0.12]
+		sel -> OAI21X12B [label=0.11]
+		out_y -> endpoint [label=0]
+		OAI21X12B -> OAI21X12Y [label=0]
+		OAI21X12C -> OAI21X12Y [label=0]
+}

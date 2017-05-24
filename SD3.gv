@@ -1,0 +1,82 @@
+// Graph
+digraph {
+	graph [bgcolor="#ffffff" fontcolor=white fontsize=12 label="Graph"]
+	node [color=white fillcolor="#222f49" fontcolor=white fontname=Helvetica fontsize=6 radius=2 shape=circle style=filled]
+	edge [arrowhead=open color="#333333" fontcolor=white fontname=Courier fontsize=12]
+	origin [label="origin
+
+Max Delay= 0
+ Min Delay= 0"]
+	a [label="a
+
+Max Delay= 0
+ Min Delay= 0"]
+	INVX11A [label="INVX11A
+
+Max Delay= 0
+ Min Delay= 0"]
+	INVX11Y [label="INVX11Y
+
+Max Delay= 0.145152
+ Min Delay= 0"]
+	OAI21X12A [label="OAI21X12A
+
+Max Delay= 0
+ Min Delay= 0"]
+	b [label="b
+
+Max Delay= 0
+ Min Delay= 0"]
+	NAND2X13A [label="NAND2X13A
+
+Max Delay= 0
+ Min Delay= 0"]
+	sel [label="sel
+
+Max Delay= 0
+ Min Delay= 0"]
+	NAND2X13B [label="NAND2X13B
+
+Max Delay= 0
+ Min Delay= 0"]
+	NAND2X13Y [label="NAND2X13Y
+
+Max Delay= 0.173084
+ Min Delay= 0"]
+	OAI21X12C [label="OAI21X12C
+
+Max Delay= 0
+ Min Delay= 0"]
+	OAI21X12B [label="OAI21X12B
+
+Max Delay= 0
+ Min Delay= 0"]
+	OAI21X12Y [label="OAI21X12Y
+
+Max Delay= 0.121527
+ Min Delay= 0"]
+	out_y [label="out_y
+
+Max Delay= 0
+ Min Delay= 0"]
+	endpoint [label="endpoint
+
+"]
+		origin -> a
+		origin -> b
+		origin -> sel
+		a -> INVX11A
+		OAI21X12Y -> out_y
+		NAND2X13Y -> OAI21X12C
+		INVX11A -> INVX11Y
+		OAI21X12A -> OAI21X12Y
+		b -> NAND2X13A
+		INVX11Y -> OAI21X12A
+		NAND2X13A -> NAND2X13Y
+		NAND2X13B -> NAND2X13Y
+		sel -> NAND2X13B
+		sel -> OAI21X12B
+		out_y -> endpoint
+		OAI21X12B -> OAI21X12Y
+		OAI21X12C -> OAI21X12Y
+}

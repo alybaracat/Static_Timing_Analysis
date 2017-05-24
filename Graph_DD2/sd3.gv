@@ -1,0 +1,33 @@
+// Graph
+digraph {
+	origin [label=origin]
+	a [label=a]
+	b [label=b]
+	OAI21X12Y [label=OAI21X12Y]
+	NAND2X13Y [label=NAND2X13Y]
+	INVX11A [label=INVX11A]
+	INVX11Y [label=INVX11Y]
+	y [label=y]
+	NAND2X13A [label=NAND2X13A]
+	NAND2X13B [label=NAND2X13B]
+	sel [label=sel]
+	OAI21X12A [label=OAI21X12A]
+	OAI21X12B [label=OAI21X12B]
+	OAI21X12C [label=OAI21X12C]
+		origin -> a
+		origin -> b
+		origin -> sel
+		a -> INVX11A
+		b -> NAND2X13A
+		OAI21X12Y -> y
+		NAND2X13Y -> OAI21X12C
+		INVX11A -> INVX11Y
+		INVX11Y -> OAI21X12A
+		NAND2X13A -> NAND2X13Y
+		NAND2X13B -> NAND2X13Y
+		sel -> NAND2X13B
+		sel -> OAI21X12B
+		OAI21X12A -> OAI21X12Y
+		OAI21X12B -> OAI21X12Y
+		OAI21X12C -> OAI21X12Y
+}

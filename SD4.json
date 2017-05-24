@@ -1,0 +1,82 @@
+{
+  "creator": "Yosys 0.7+169 (git sha1 3bbac5c, clang 3.4-1ubuntu3 -fPIC -Os)",
+  "modules": {
+    "simple_design1": {
+      "attributes": {
+        "src": "mydesign.v:3"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "data": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$abc$51$auto$blifparse.cc:346:parse_blif$52": {
+          "hide_name": 1,
+          "type": "OR2X1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$auto$simplemap.cc:420:simplemap_dff$50": {
+          "hide_name": 1,
+          "type": "DFFPOSX1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 3 ],
+            "Q": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "data": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "mydesign.v:4"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "mydesign.v:5"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "mydesign.v:6"
+          }
+        }
+      }
+    }
+  }
+}
