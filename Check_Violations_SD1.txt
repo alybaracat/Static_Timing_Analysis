@@ -1,1 +1,0 @@
-No FlipFlops in this design

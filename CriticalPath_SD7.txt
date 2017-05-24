@@ -1,3 +1,0 @@
-Longest Path: ['origin', u'b', u'NOR2X11B', u'NOR2X11Y', u'XNOR2X12B', u'XNOR2X12Y', 'd1', u'q1', u'out_out_2']
-
-Delay: 0.624516

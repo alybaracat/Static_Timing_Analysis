@@ -1,6 +1,0 @@
-0 >= -0.716302 ==> No Setup Time Violation
- origin -> u data -> u d1 ->  q1 
-
-0 >= -0.716302 ==> No Setup Time Violation
- origin -> u clk -> u clk1 ->  q1 
-

@@ -1,3 +1,0 @@
-Longest Path: ['origin', u'clk', 'clk1', u'q1', u'OR2X11A', u'OR2X11Y', u'out_y', 'endpoint']
-
-Delay: 0.403609
